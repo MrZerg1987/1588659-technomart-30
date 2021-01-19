@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Сергей Козин](https://up.htmlacademy.ru/htmlcss/30/user/1588659).
-* Наставник: `Неизвестно`.
+- Студент: [Сергей Козин](https://up.htmlacademy.ru/htmlcss/30/user/1588659).
+- Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 
