@@ -10,9 +10,6 @@
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap;subset=latin,cyrillic">
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,41 +17,51 @@
 <body class="page-body">
 
   <header class="main-header">
-    <h1>Интернет-магазин "Техномарт"</h1>
+    <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
     <div class="upper-block-header">
       <div class="user-navigation container">
-        <a class="header-logo" href="index.html">
-          <img src="img/svg/logo.svg" width="220" height="68" alt="Логотип компании Техномарт">
+        <a class="main-logo" href="index.html">
+          <img src="img/svg/logo-technomart.svg" width="108" height="18" alt="Логотип компании Техномарт">
         </a>
-        <form action="#" type="get">
-          <label>
-            <input class="header-search" type="search" name="search" placeholder="Поиск:">
-          </label>
-        </form>
-        <a class="bookmark-button">Закладки: 0</a>
-        <a class="cart-button">Корзина: 0</a>
-        <a class="order-button">Оформить заказ</a>
+        <div class="products-search">
+          <form action="#" type="get">
+            <label>
+              <input type="search" name="search" placeholder="Поиск:">
+            </label>
+          </form>
+        </div>
+        <ul>
+          <li>
+            <a class="orders-products-item bookmark-button">Закладки: 0</a>
+          </li>
+          <li>
+            <a class="orders-products-item cart-button"> Корзина: 0</a>
+          </li>
+          <li>
+            <a class="orders-products-item order-button">Оформить заказ</a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="central-block-header container">
-      <p class="p-first-child">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p class="description">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
       <a class="header-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <section class="account-block-header">
-        <h2>Вход в личный кабинет</h2>
-        <a class="login-in-link">Войти</a>
-        <a class="registration-link">Регистрация</a>
+        <h2 class="visually-hidden">Вход в личный кабинет</h2>
+        <a class="login-in link-white" href="blank.html">Войти</a>
+        <a class="registration link-white" href="blank.html">Регистрация</a>
       </section>
     </div>
     <nav class="main-navigation container">
       <ul class="site-navigation">
-        <li><a href="index.html">Главная</a></li>
-        <li><a>Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a>Новости</a></li>
-        <li><a>Спецпредложения</a></li>
-        <li><a>Доставка</a></li>
-        <li><a>Контакты</a></li>
+        <li><a class="link-grey" href="index.html">Главная</a></li>
+        <li><a class="link-grey">Компания</a></li>
+        <li><a class="link-grey" href="catalog.html">Каталог</a></li>
+        <li><a class="link-grey">Новости</a></li>
+        <li><a class="link-grey">Спецпредложения</a></li>
+        <li><a class="link-grey">Доставка</a></li>
+        <li><a class="link-grey">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -65,31 +72,29 @@
   </main>
 
   <footer class="main-footer">
-    <div class="footer-upper-block">
-      <div class="container">
-        <div class="footer-contacts">
-          <a class="footer-logo" href="index.html">
-            <img src="img/svg/logo.svg" width="220" height="68" alt="Логотип компании Техномарт">
-          </a>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a class="contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </div>
-        <nav class="footer-navigation">
-          <ul class="site-navigation">
-            <li><a>Компания</a></li>
-            <li><a>Новости</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a>Доставка</a></li>
-            <li><a>Контакты</a></li>
-          </ul>
-          <ul class="category-navigation">
-            <li><a>Материалы</a></li>
-            <li><a>Техника</a></li>
-            <li><a>Инструмент</a></li>
-            <li><a>Спецпредложения</a></li>
-          </ul>
-        </nav>
+    <div class="container">
+      <div class="footer-contacts">
+        <a class="main-logo" href="index.html">
+          <img src="img/svg/logo-technomart.svg" width="108" height="18" alt="Логотип компании Техномарт">
+        </a>
+        <p class="footer-contacts-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a class="contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
       </div>
+      <nav class="footer-navigation">
+        <ul class="site-navigation">
+          <li><a class="site-navigation-link">Компания</a></li>
+          <li><a class="site-navigation-link">Новости</a></li>
+          <li><a class="site-navigation-link" href="catalog.html">Каталог</a></li>
+          <li><a class="site-navigation-link">Доставка</a></li>
+          <li><a class="site-navigation-link">Контакты</a></li>
+        </ul>
+        <ul class="category-navigation">
+          <li><a class="category-navigation-link">Материалы</a></li>
+          <li><a class="category-navigation-link">Техника</a></li>
+          <li><a class="category-navigation-link" href="catalog.html">Инструмент</a></li>
+          <li><a class="category-navigation-link">Спецпредложения</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="footer-lower-block">
       <div class="container">
@@ -98,26 +103,23 @@
           <p>Все права защищены</p>
         </div>
         <ul class="social-network-list">
-          <li>
-            <a class="social-button" href=" #"><img src="img/svg/icon-vk.svg" width="44" height="44"
-                alt="Логотип Vkontakte"></a>
+          <li class="social-network-item">
+            <a class="social-link" href=" #"><img src="img/svg/icon-vk.svg" alt="Логотип Vkontakte"></a>
           </li>
-          <li>
-            <a class="social-button" href="#"><img src="img/svg/icon-fb.svg" width="44" height="44"
-                alt="Логотип Faceboook"></a>
+          <li class="social-network-item">
+            <a class="social-link" href="#"><img src="img/svg/icon-fb.svg" alt="Логотип Faceboook"></a>
           </li>
-          <li>
-            <a class="social-button" href="#"><img src="img/svg/icon-insta.svg" width="44" height="44"
-                alt="Логотип Instagram"></a>
+          <li class="social-network-item">
+            <a class="social-link" href="#"><img src="img/svg/icon-insta.svg" alt="Логотип Instagram"></a>
           </li>
         </ul>
         <p class="footer-feedback">
           Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="developer">
           Разработано —
-          <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+          <a class="feedback-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
         </p>
       </div>
     </div>
