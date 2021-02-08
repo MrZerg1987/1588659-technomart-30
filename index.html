@@ -14,33 +14,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body class="page-body">
+
 
   <header class="main-header">
     <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
-    <div class="upper-block-header">
-      <div class="user-navigation container">
+    <div class="upper-band-header">
+      <div class="upper-block-header container">
         <a class="main-logo-header">
           <img src="img/svg/logo-technomart.svg" width="108" height="18" alt="Логотип компании Техномарт">
         </a>
-        <div class="products-search">
+        <div class="user-navigation">
           <form action="#" type="get">
-            <label>
-              <input type="search" name="search" placeholder="Поиск:">
-            </label>
+            <div class="products-search">
+              <label>
+                <input type="search" name="search" placeholder="Поиск:">
+              </label>
+            </div>
           </form>
+          <a class="orders-products-item bookmark-button" href="blank.html">Закладки: 0</a>
+          <a class="orders-products-item cart-button" href="blank.html"> Корзина: 0</a>
+          <a class="orders-products-item order-button" href="blank.html">Оформить заказ</a>
         </div>
-        <ul class="orders-products-list">
-          <li>
-            <a class="orders-products-item bookmark-button" href="blank.html">Закладки: 0</a>
-          </li>
-          <li>
-            <a class="orders-products-item cart-button" href="blank.html"> Корзина: 0</a>
-          </li>
-          <li>
-            <a class="orders-products-item order-button" href="blank.html">Оформить заказ</a>
-          </li>
-        </ul>
       </div>
     </div>
     <div class="central-block-header container">
@@ -49,11 +45,10 @@
         <a class="header-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
-      <section class="header-account-block">
-        <h2 class="visually-hidden">Вход в личный кабинет</h2>
+      <div class="header-account-block">
         <a class="login-in link-white" href="blank.html">Войти</a>
         <a class="registration link-white" href="blank.html">Регистрация</a>
-      </section>
+      </div>
     </div>
     <nav class="main-navigation container">
       <ul class="site-navigation">
@@ -68,65 +63,57 @@
     </nav>
   </header>
 
+
   <main>
     <section class="main-services-menu container">
       <h2 class="visually-hidden">Основные разделы</h2>
-      <div class="first-row">
-        <div class="block-service materials">
-          <h3 class="name-service">Материалы</h3>
-          <a class="link-service" href="blank.html">на любой вкус</a>
-        </div>
-        <div class="block-service tools">
-          <h3 class="name-service">Инструмент</h3>
-          <a class="link-service" href="blank.html">на все случаи</a>
-        </div>
-        <div class="block-service equipment">
-          <h3 class="name-service">Техника</h3>
-          <a class="link-service" href="blank.html">для стройки</a>
-        </div>
+      <div class="block-service materials">
+        <h3 class="name-service">Материалы</h3>
+        <a class="link-service" href="blank.html">на любой вкус</a>
       </div>
-      <div class="second-row">
-        <div class="right-column">
-          <div class="block-service discounts">
-            <h3 class="name-service">Скидки 50%</h3>
-            <a class="link-service" href="blank.html">на 350 товаров</a>
-          </div>
-          <div class="block-service delivery">
-            <h3 class="name-service">Доставка</h3>
-            <a class="link-service" href="blank.html">бесплатно</a>
-          </div>
-        </div>
-        <div class="gallery">
-          <div class="slide-1">
-            <h3 class="name-tools">Перфораторы</h3>
-            <p class="description-tools">Настоящие мужские игрушки</p>
-            <img class="photo-tools" src="img/content/gallery1.jpg" width="620" height="266"
-              alt="Мужчина с перфоратором">
-            <a class="link-red gallery-link" href="catalog.html">Открыть каталог</a>
-          </div>
-          <div class="slide-2 visually-hidden">
-            <h3 class="name-tools visually-hidden">Дрели</h3>
-            <p class="description-tools visually-hidden">Соседям на радость!</p>
-            <img class="photo-tools" src="img/content/gallery2.jpg" width="620" height="266" alt="Мужчина с дрелью">
-            <a class="link-red gallery-link visually-hidden" href="catalog.html">Открыть каталог</a>
-          </div>
-          <ul class="button-control">
-            <li class="button-control-items">
-              <button type="button" class="gallery-button-back">&nbsp;</button>
-            </li>
-            <li class="button-control-items">
-              <button type="button" class="gallery-button-next">&nbsp;</button>
-            </li>
-          </ul>
-          <ul class="button-pagination">
-            <li class="button-pagination-items">
-              <button type="button" class="button-pagination-first">&nbsp;</button>
-            </li>
-            <li class="button-pagination-items">
-              <button type="button" class="button-pagination-second">&nbsp;</button>
-            </li>
-          </ul>
-        </div>
+      <div class="block-service tools">
+        <h3 class="name-service">Инструмент</h3>
+        <a class="link-service" href="blank.html">на все случаи</a>
+      </div>
+      <div class="block-service equipment">
+        <h3 class="name-service">Техника</h3>
+        <a class="link-service" href="blank.html">для стройки</a>
+      </div>
+      <div class="block-service discounts">
+        <h3 class="name-service">Скидки 50%</h3>
+        <a class="link-service" href="blank.html">на 350 товаров</a>
+      </div>
+      <div class="block-service delivery">
+        <h3 class="name-service">Доставка</h3>
+        <a class="link-service" href="blank.html">бесплатно</a>
+      </div>
+      <div class="slide-1">
+        <h3 class="name-tools">Перфораторы</h3>
+        <p class="description-tools">Настоящие мужские игрушки</p>
+        <img class="photo-tools" src="img/content/gallery1.jpg" width="620" height="266" alt="Мужчина с перфоратором">
+        <a class="link-red gallery-link" href="catalog.html">Открыть каталог</a>
+        <ul class="button-control">
+          <li class="button-control-items">
+            <button type="button" class="gallery-button-back"></button>
+          </li>
+          <li class="button-control-items">
+            <button type="button" class="gallery-button-next"></button>
+          </li>
+        </ul>
+        <ul class="button-pagination">
+          <li class="button-pagination-items">
+            <button type="button" class="button-pagination-first"></button>
+          </li>
+          <li class="button-pagination-items">
+            <button type="button" class="button-pagination-second"></button>
+          </li>
+        </ul>
+      </div>
+      <div class="slide-2">
+        <h3 class="name-tools">Дрели</h3>
+        <p class="description-tools">Соседям на радость!</p>
+        <img class="photo-tools" src="img/content/gallery2.jpg" width="620" height="266" alt="Мужчина с дрелью">
+        <a class="link-red gallery-link" href="catalog.html">Открыть каталог</a>
       </div>
     </section>
 
@@ -217,9 +204,9 @@
           стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-block">
           <ul class="services-list-button">
-            <li><button class="services-item-button delivery-button">Доставка</button></li>
-            <li><button class="services-item-button">Гарантия</button></li>
-            <li><button class="services-item-button">Кредит</button></li>
+            <li><button type="button" class="services-item-button delivery-button">Доставка</button></li>
+            <li><button type="button" class="services-item-button">Гарантия</button></li>
+            <li><button type="button" class="services-item-button">Кредит</button></li>
           </ul>
           <ul class="services-list">
             <li class="delivery-item">
@@ -228,14 +215,14 @@
                 совершенно
                 бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
             </li>
-            <li class="guarantee-item visually-hidden">
+            <li class="guarantee-item">
               <h3 class="service-name">Гарантия</h3>
               <p class="service-text-description">Если купленный у нас товар поломается или заискрит, а также в случае
                 пожара, спровоцированного его
                 возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
               <p class="service-text-description">Дом уж восстановите как-нибудь сами.</p>
             </li>
-            <li class="credit-item visually-hidden">
+            <li class="credit-item">
               <h3 class="service-name">Кредит</h3>
               <p class="service-text-description">Залезть в долговую яму стало проще!</p>
               <p class="service-text-description">Кредитные консультанты придут вам на помощь.</p>
