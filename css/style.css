@@ -174,6 +174,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .main-logo-header:focus {
@@ -283,12 +284,12 @@ img {
   line-height: 23px;
   color: var(--basic-red);
   align-self: center;
-  margin: 42px 0 44px 30px;
+  margin: 43px 0 45px 30px;
 }
 
 .header-contacts-block {
   margin: 46px 0 40px 0;
-  justify-self: center;
+  justify-self: start;
 }
 
 .header-contacts-phone {
@@ -301,6 +302,7 @@ img {
   line-height: 30px;
   color: var(--basic-red);
   border: 3px solid var(--basic-white);
+  margin-bottom: 3px;
 }
 
 .header-contacts-phone::before {
@@ -309,6 +311,7 @@ img {
 }
 
 .addres {
+  width: 270px;
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-grey);
@@ -317,7 +320,7 @@ img {
   text-align: center;
 }
 
-.header-account-block {
+.header-account-block-in {
   display: grid;
   grid-template-columns: 121px 150px;
   grid-column-gap: 10px;
@@ -375,10 +378,16 @@ img {
 /* Catalog */
 
 
+.header-account-block {
+  margin: 46px 0 37px;
+  justify-self: end;
+}
 
 .login-out {
+  display: inline-flex;
   width: 299px;
   height: 45px;
+  margin-bottom: 7px;
 }
 
 .login-out::before {
@@ -409,9 +418,24 @@ img {
 }
 
 .links-control {
-  margin-top: 8px;
+  width: 210px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.orders-link::after {
+  content: "";
+  display: inline-flex;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: var(--basic-grey);
+  position: relative;
+  bottom: 3px;
+  left: 14px;
+
 }
 
 .orders-link,
@@ -419,7 +443,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey);
-  padding: 0 15px;
+  padding: 0 0 5px 0;
 }
 
 .orders-link:hover,
@@ -549,7 +573,6 @@ img {
   background-image: url("../img/svg/icon-discounts.svg");
   order: 2;
   grid-column: 3;
-  grid-row: 2;
 }
 
 .delivery {
@@ -558,7 +581,6 @@ img {
   background-image: url("../img/svg/icon-delivery.svg");
   order: 2;
   grid-column: 3;
-  grid-row: 3;
 }
 
 
@@ -566,15 +588,21 @@ img {
 /* Gallery */
 
 
+.gallery {
+  position: relative;
+  width: 620px;
+  height: 266px;
+}
 
 .slide-1 {
-  position: relative;
   width: 620px;
   height: 266px;
 }
 
 .slide-2 {
   display: none;
+  width: 620px;
+  height: 266px;
 }
 
 .name-tools {
@@ -948,7 +976,6 @@ img {
 
 .delivery-item {
   width: 619px;
-  height: 283px;
   background-image: url("../img/content/delivery.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -957,7 +984,6 @@ img {
 .guarantee-item {
   display: none;
   width: 619px;
-  height: 283px;
   background-image: url("../img/content/guarantee.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -966,7 +992,6 @@ img {
 .credit-item {
   display: none;
   width: 619px;
-  height: 283px;
   background-image: url("../img/content/credit.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -1122,16 +1147,14 @@ img {
 .bread-crumbs-list {
   list-style: none;
   padding: 0;
-  margin: 20px auto;
-  height: 18px;
-  display: grid;
-  grid-template-columns: min-content min-content min-content min-content 1fr;
-  grid-column-gap: 40px;
+  margin: 16px auto;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .crumbs-item {
-  height: 18px;
+  padding: 5px 40px 5px 0;
 }
 
 .crumbs-link-home {
@@ -1165,7 +1188,6 @@ img {
 /* Catalog */
 
 .hammer-page {
-  height: 89px;
   background-color: var(--basic-light-grey);
   margin-bottom: 20px;
 }
@@ -1187,12 +1209,11 @@ img {
 }
 
 .filter-form {
-  display: grid;
-  grid-template-rows: min-content 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .filter-form-title {
-  height: 38px;
   font-family: var(--font-pt-sans);
   font-style: normal;
   font-weight: 400;
@@ -1320,7 +1341,6 @@ img {
   margin: 0 0 28px 0;
   display: flex;
   width: 700px;
-  height: 38px;
 }
 
 .sort-block-title {
@@ -1428,8 +1448,7 @@ img {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-gap: 20px;
 }
 
 .product-card-choose {
@@ -1557,9 +1576,7 @@ img {
 
 .pages-list {
   list-style: none;
-  display: grid;
-  grid-template-columns: min-content min-content min-content min-content;
-  grid-column-gap: 10px;
+  display: flex;
   margin: 48px 0 0 0;
   padding: 0;
 }
@@ -1571,6 +1588,7 @@ img {
   color: var(--basic-white);
   background: var(--basic-red);
   border-radius: 2px;
+  margin: 0 10px 0 0;
 }
 
 .pages-item-2,
@@ -1583,6 +1601,7 @@ img {
   background: var(--basic-white);
   border: 1px solid var(--special-milk-white);
   border-radius: 2px;
+  margin: 0 10px 0 0;
 }
 
 .pages-item-link {
@@ -1660,7 +1679,7 @@ img {
   margin: 0;
 }
 
-.main-logo {
+.main-logo-footer {
   width: 220px;
   height: 68px;
   background-color: var(--basic-red);
@@ -1669,6 +1688,11 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 22px;
+  flex-shrink: 0;
+}
+
+.main-logo-footer:focus {
+  background-color: var(--special-dark-red);
 }
 
 .footer-contacts-text {
@@ -1688,9 +1712,6 @@ img {
 }
 
 .footer-navigation {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-row-gap: 34px;
   padding: 0;
   margin: 37px 0 74px 0;
 }
@@ -1702,7 +1723,7 @@ img {
   grid-row-gap: 20px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 34px 0;
 }
 
 .site-navigation-link {
@@ -1749,6 +1770,7 @@ img {
 .footer-lower-block {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 36px 0 34px 0;
 }
 
@@ -1759,17 +1781,15 @@ img {
 
 .copyright {
   width: 235px;
-  margin-right: 160px;
 }
 
 .social-network-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 5px;
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social-link {
@@ -1780,6 +1800,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin: 2px;
 }
 
 .social-link:hover,
@@ -1800,7 +1821,6 @@ img {
   grid-template-columns: 137px 99px;
   grid-column-gap: 51px;
   justify-self: center;
-  margin-left: 118px;
 }
 
 .feedback-link {
