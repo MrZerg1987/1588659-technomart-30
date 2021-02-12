@@ -67,7 +67,7 @@
 
   <main>
     <ul class="bread-crumbs-list container">
-      <li class="crumbs-item"><a class="crumbs-link-home" href="index.html">&nbsp;</a></li>
+      <li class="crumbs-item"><a class="crumbs-link-home" href="index.html"></a></li>
       <li class="crumbs-item"><a class="crumbs-link" href="catalog.html">Каталог</a></li>
       <li class="crumbs-item"><a class="crumbs-link" href="blank.html">Инструмент</a></li>
       <li class="crumbs-item"><a class="crumbs-link">Перфораторы</a></li>
@@ -78,48 +78,67 @@
     <div class="catalog-page container">
       <section class="filter-form">
         <h2 class="filter-form-title">Фильтр:</h2>
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <h3 class="filter-block-title">Цена:</h3>
-          <div class="cost-choice">Здесь будет движок</div>
-          <div class="cost-interval">
-            <input type="number" name="price-min" placeholder="0">
-            <span>-</span>
-            <input type="number" name="price-max" placeholder="30000">
-          </div>
-          <h3 class="filter-block-title">Производители:</h3>
-          <div class="company-choice">
-            <label>
-              <input type="checkbox" name="bosch" value="bosch" checked>
-              BOSCH
-            </label>
-            <label>
-              <input type="checkbox" name="interskol" value="interskol">
-              ИНТЕРСКОЛ
-            </label>
-            <label>
-              <input type="checkbox" name="makita" value="makita" checked>
-              MAKITA
-            </label>
-            <label>
-              <input type="checkbox" name="dewalt" value="dewalt">
-              DEWALT
-            </label>
-            <label>
-              <input type="checkbox" name="hitachi" value="hitachi">
-              HITACHI
-            </label>
-          </div>
-          <h3 class="filter-block-title">Питание:</h3>
-          <div class="power-choice">
-            <label>
-              <input type="radio" name="power-supply" value="battery" checked>
-              АККУМУЛЯТОРНЫЕ
-            </label>
-            <label>
-              <input type="radio" name="power-supply" value="wire">
-              СЕТЕВЫЕ
-            </label>
-          </div>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="fieldset">
+            <legend class="filter-block-title">Цена:</legend>
+            <div class="cost-choice">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="cost-interval">
+              <input type="number" name="price-min" placeholder="0">
+              <span>-</span>
+              <input type="number" name="price-max" placeholder="30000">
+            </div>
+          </fieldset>
+          <fieldset class="fieldset">
+            <legend class="filter-block-title">Производители:</legend>
+            <ul class="company-choice">
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox" id="company-choice-input" type="checkbox"
+                  name="bosch" value="bosch" checked>
+                <label for="company-choice-input">BOSCH</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox" id="company-choice-input" type="checkbox"
+                  name="interskol" value="interskol">
+                <label for="company-choice-input">ИНТЕРСКОЛ</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox" id="company-choice-input" type="checkbox"
+                  name="makita" value="makita" checked>
+                <label for="company-choice-input">MAKITA</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox" id="company-choice-input" type="checkbox"
+                  name="dewalt" value="dewalt">
+                <label for="company-choice-input">DEWALT</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox" id="company-choice-input" type="checkbox"
+                  name="hitachi" value="hitachi">
+                <label for="company-choice-input">HITACHI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="fieldset">
+            <legend class="filter-block-title">Питание:</legend>
+            <ul class="power-choice">
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-supply"
+                  id="power-choice-input" value="battery" checked>
+                <label for="power-choice-input">АККУМУЛЯТОРНЫЕ</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-supply"
+                  id="power-choice-input" value="wire">
+                <label for="power-choice-input">СЕТЕВЫЕ</label>
+              </li>
+            </ul>
+          </fieldset>
           <button class="button-result" type="submit">ПОКАЗАТЬ</button>
         </form>
       </section>
@@ -128,13 +147,13 @@
         <div class="sort-block">
           <h3 class="sort-block-title">Сортировка:</h3>
           <ul class="sort-first-list">
-            <li><a class="sort-item">По цене</a></li>
-            <li><a class="sort-item">По типу</a></li>
-            <li><a class="sort-item">По функционалу</a></li>
+            <li><a class="sort-first-item first-list-active" href="blank.html">По цене</a></li>
+            <li><a class="sort-first-item" href="blank.html">По типу</a></li>
+            <li><a class="sort-first-item" href="blank.html">По функционалу</a></li>
           </ul>
           <ul class="sort-second-list">
-            <li><a class="sort-second-list-up"></a></li>
-            <li><a class="sort-second-list-down"></a></li>
+            <li><a class="sort-second-list-up  second-list-active" href="blank.html"></a></li>
+            <li><a class="sort-second-list-down" href="blank.html"></a></li>
           </ul>
         </div>
         <ul class="product-list-catalog">
@@ -289,7 +308,7 @@
           </li>
         </ul>
         <ul class="pages-list">
-          <li class="pages-item"><a class="pages-item-link pages-item-1">1</a></li>
+          <li class="pages-item"><a class="pages-item-link pages-item-1 pages-item-active">1</a></li>
           <li class="pages-item"><a class="pages-item-link pages-item-2" href="blank.html">2</a></li>
           <li class="pages-item"><a class="pages-item-link pages-item-3" href="blank.html">3</a></li>
           <li class="pages-item"><a class="pages-item-next" href="blank.html">СЛЕДУЮЩАЯ</a></li>
