@@ -435,9 +435,6 @@ input::-webkit-search-results-decoration {
 
 /* Catalog */
 
-
-.header-account-block {}
-
 .login-out {
   display: flex;
   width: 299px;
