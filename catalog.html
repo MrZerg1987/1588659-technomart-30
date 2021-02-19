@@ -32,7 +32,7 @@
             </div>
           </form>
           <a class="orders-products-item bookmark-button" href="blank.html">Закладки: 0</a>
-          <a class="orders-products-item cart-button cart-button-filled" href="blank.html"> Корзина: 10</a>
+          <a class="orders-products-item header-cart-button cart-button-filled" href="blank.html"> Корзина: 10</a>
           <a class="orders-products-item order-button" href="blank.html">Оформить заказ</a>
         </div>
       </div>
@@ -114,7 +114,7 @@
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox" id="dewalt-choice-input" type="checkbox"
-                  name="company" value="dewalt">
+                  name="company" value="dewalt" disabled>
                 <label for="dewalt-choice-input">dewalt</label>
               </li>
               <li class="filter-option filter-checkbox">
@@ -129,7 +129,7 @@
             <ul class="power-choice">
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-supply"
-                  id="battery-choice-input" value="battery" checked>
+                  id="battery-choice-input" value="battery" checked disabled>
                 <label for="battery-choice-input">АККУМУЛЯТОРНЫЕ</label>
               </li>
               <li class="filter-option filter-radio">
@@ -354,7 +354,7 @@
           <ul class="category-navigation">
             <li><a class="category-navigation-link" href="blank.html">Материалы</a></li>
             <li><a class="category-navigation-link" href="blank.html">Техника</a></li>
-            <li><a class="category-navigation-link">Инструмент</a></li>
+            <li><a class="category-navigation-link" href="blank.html">Инструмент</a></li>
             <li><a class="category-navigation-link" href="blank.html">Спецпредложения</a></li>
           </ul>
         </nav>
@@ -392,5 +392,16 @@
     </div>
   </footer>
 </body>
+
+<div class="modal modal-cart">
+  <button class="close-modal-button close-modal-cart" type="button" aria-label="Закрыть"></button>
+  <div class="modal-form-massage">
+    <p>Товар добавлен в корзину!</p>
+  </div>
+  <div class="modal-cart-button">
+    <button class="cart-button complete-button link-red" type="button">Оформить заказ</button>
+    <button class="cart-button continue-button link-white" type="button">Продолжить покупки</button>
+  </div>
+</div>
 
 </html>
