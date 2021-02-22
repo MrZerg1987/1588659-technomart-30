@@ -170,7 +170,7 @@ img {
   position: relative
 }
 
-.products-search input {
+.products-search-input {
   width: 270px;
   padding: 12px 10px 10px 42px;
   background-color: transparent;
@@ -178,35 +178,14 @@ img {
   color: var(--basic-white)
 }
 
-.products-search label::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/svg/icon-search.svg);
-  background-repeat: no-repeat;
-  top: 12px;
-  left: 17px;
-  width: 17px;
-  height: 17px;
-  opacity: .5
-}
-
-.products-search label:hover:before {
-  opacity: 1
-}
-
-.products-search input::placeholder {
+.products-search-input::placeholder {
   color: var(--basic-white)
 }
 
-.products-search input:focus {
+.products-search-input:focus {
   background-color: var(--basic-white);
   color: var(--basic-black);
   outline: 0
-}
-
-.products-search label:active:before {
-  background-image: url(../img/svg/icon-search-red.svg);
-  opacity: 1
 }
 
 input::-webkit-search-cancel-button,
@@ -214,6 +193,25 @@ input::-webkit-search-decoration,
 input::-webkit-search-results-button,
 input::-webkit-search-results-decoration {
   display: none
+}
+
+.products-search svg {
+  position: absolute;
+  fill: var(--basic-white);
+  opacity: .3;
+  width: 17px;
+  height: 17px;
+  left: 17px;
+  top: 12px
+}
+
+.products-search-input:hover+svg {
+  opacity: 1
+}
+
+.products-search-input:focus+svg {
+  opacity: 1;
+  fill: var(--basic-red)
 }
 
 .orders-products-item {
@@ -562,9 +560,9 @@ input::-webkit-search-results-decoration {
 
 .materials {
   background-color: var(--basic-yellow);
-  background-image: url(../img/svg/icon-materials.svg), url(../img/svg/label-new.svg);
-  background-position-x: 214px, 231px;
-  background-position-y: 31px, top
+  background-image: url(../img/svg/icon-materials.svg);
+  background-position-x: 214px;
+  background-position-y: 31px
 }
 
 .tools {
@@ -774,6 +772,21 @@ input::-webkit-search-results-decoration {
   position: relative
 }
 
+.label-new {
+  position: relative
+}
+
+.label-new::after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  background-image: url(../img/svg/label-new.svg);
+  right: 0;
+  top: 0
+}
+
 .product-card-choose {
   width: 220px;
   background: var(--basic-white);
@@ -795,17 +808,6 @@ input::-webkit-search-results-decoration {
   align-items: center;
   justify-content: center;
   object-fit: contain
-}
-
-.label-new::after {
-  content: "";
-  width: 70px;
-  height: 70px;
-  display: flex;
-  position: absolute;
-  background-image: url(../img/svg/label-new.svg);
-  right: -2px;
-  top: -1px
 }
 
 .product-card-link {
