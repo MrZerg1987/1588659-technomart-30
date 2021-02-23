@@ -166,11 +166,11 @@ img {
   flex-wrap: wrap
 }
 
-.products-search {
+.form-products-search {
   position: relative
 }
 
-.products-search-input {
+.products-search {
   width: 270px;
   padding: 12px 10px 10px 42px;
   background-color: transparent;
@@ -178,11 +178,11 @@ img {
   color: var(--basic-white)
 }
 
-.products-search-input::placeholder {
+.products-search::placeholder {
   color: var(--basic-white)
 }
 
-.products-search-input:focus {
+.products-search:focus {
   background-color: var(--basic-white);
   color: var(--basic-black);
   outline: 0
@@ -195,7 +195,7 @@ input::-webkit-search-results-decoration {
   display: none
 }
 
-.products-search svg {
+.form-products-search svg {
   position: absolute;
   fill: var(--basic-white);
   opacity: .3;
@@ -205,11 +205,11 @@ input::-webkit-search-results-decoration {
   top: 12px
 }
 
-.products-search-input:hover+svg {
+.products-search:hover+svg {
   opacity: 1
 }
 
-.products-search-input:focus+svg {
+.products-search:focus+svg {
   opacity: 1;
   fill: var(--basic-red)
 }
