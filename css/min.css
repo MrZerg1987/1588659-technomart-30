@@ -811,7 +811,7 @@ input::-webkit-search-results-decoration {
 }
 
 .product-card-photo {
-  width: 220px;
+  background-color: var(--special-light-grey);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -856,13 +856,9 @@ input::-webkit-search-results-decoration {
   padding: 9px 22px 11px 10px
 }
 
-.product-card-choose span {
-  margin-bottom: 21px
-}
-
 .product-card-buttons {
   width: 220px;
-  padding: 38px 0 56.5px 0;
+  padding: 38px 0 57px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -942,6 +938,7 @@ input::-webkit-search-results-decoration {
 
 .company-logo {
   display: flex;
+  background-color: var(--special-light-grey);
   width: 220;
   height: 145
 }
@@ -1186,7 +1183,7 @@ input::-webkit-search-results-decoration {
 }
 
 .map-link {
-  background-color: var(--basic-light-grey);
+  background-color: var(--special-light-grey);
   display: inline-flex;
   width: 300px;
   height: 160px;
@@ -1546,48 +1543,20 @@ input::-webkit-search-results-decoration {
   margin: 0
 }
 
-.sort-second-list-up {
-  background-image: url(../img/svg/arrow-up-grey.svg);
-  display: flex;
-  width: 11px;
-  height: 10px
-}
-
-.sort-second-list-up:hover {
-  background-image: url(../img/svg/arrow-up-black.svg);
-  display: flex;
-  width: 11px;
-  height: 10px
-}
-
-.sort-second-list-up.second-list-active {
-  background-image: url(../img/svg/arrow-up-red.svg);
-  display: flex;
-  width: 11px;
-  height: 10px;
+.sort-second-item.second-item-active {
   pointer-events: none
 }
 
-.sort-second-list-down {
-  background-image: url(../img/svg/arrow-down-grey.svg);
-  display: flex;
-  width: 11px;
-  height: 10px
+.sort-second-item.second-item-active svg {
+  fill: var(--basic-red)
 }
 
-.sort-second-list-down:hover {
-  background-image: url(../img/svg/arrow-down-black.svg);
-  display: flex;
-  width: 11px;
-  height: 10px
+.sort-second-item svg {
+  fill: var(--special-dirty-white)
 }
 
-.sort-second-list-down.second-list-active {
-  background-image: url(../img/svg/arrow-down-red.svg);
-  display: flex;
-  width: 11px;
-  height: 10px;
-  pointer-events: none
+.sort-second-item svg:hover {
+  fill: var(--basic-black)
 }
 
 .product-list-catalog {
