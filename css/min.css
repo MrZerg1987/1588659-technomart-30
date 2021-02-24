@@ -611,9 +611,17 @@ input::-webkit-search-results-decoration {
 }
 
 .slide-2 {
-  display: none;
   width: 620px;
   height: 266px
+}
+
+.slide-off {
+  display: none
+}
+
+.button-disable {
+  opacity: 0.3;
+  pointer-events: none
 }
 
 .name-tools {
@@ -1046,6 +1054,10 @@ input::-webkit-search-results-decoration {
   list-style: none
 }
 
+.services-item-disable {
+  display: none
+}
+
 .delivery-item {
   width: 619px;
   position: relative
@@ -1062,7 +1074,6 @@ input::-webkit-search-results-decoration {
 }
 
 .guarantee-item {
-  display: none;
   width: 619px;
   position: relative
 }
@@ -1078,7 +1089,6 @@ input::-webkit-search-results-decoration {
 }
 
 .credit-item {
-  display: none;
   width: 619px;
   position: relative
 }

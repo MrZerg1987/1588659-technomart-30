@@ -97,7 +97,7 @@
           <img class="photo-tools" src="img/content/gallery1.jpg" width="620" height="266" alt="Мужчина с перфоратором">
           <a class="link-red gallery-link" href="catalog.html">Открыть каталог</a>
         </div>
-        <div class="slide-2">
+        <div class="slide-2 slide-off">
           <h3 class="name-tools">Дрели</h3>
           <p class="description-tools">Соседям на радость!</p>
           <img class="photo-tools" src="img/content/gallery2.jpg" width="620" height="266" alt="Мужчина с дрелью">
@@ -105,7 +105,8 @@
         </div>
         <ul class="button-control">
           <li>
-            <button type="button" class="gallery-button gallery-button-back" aria-label="Предыдущий слайд"></button>
+            <button type="button" class="gallery-button gallery-button-back button-disable"
+              aria-label="Предыдущий слайд"></button>
           </li>
           <li>
             <button type="button" class="gallery-button gallery-button-next" aria-label="Следующий слайд"></button>
@@ -113,10 +114,11 @@
         </ul>
         <ul class="button-pagination-block">
           <li class="button-pagination-items">
-            <button type="button" class="button-pagination" aria-label="Кнопка выбора первого слайда"></button>
+            <button type="button" class="button-pagination button-pagination-1 gallery-pagination-active"
+              aria-label="Кнопка выбора первого слайда"></button>
           </li>
           <li class="button-pagination-items">
-            <button type="button" class="button-pagination gallery-pagination-active"
+            <button type="button" class="button-pagination  button-pagination-2"
               aria-label="Кнопка выбора второго слайда"></button>
           </li>
         </ul>
@@ -268,7 +270,7 @@
                 aria-label="Информация об услуге Доставка">Доставка</button></li>
             <li><button type="button" class="services-item-button guarantee-button"
                 aria-label="Информация об услуге Гарантия">Гарантия</button></li>
-            <li><button type="button" class="services-item-button guarantee-button"
+            <li><button type="button" class="services-item-button credit-button"
                 aria-label="Информация об услуге Кредит">Кредит</button></li>
           </ul>
           <ul class="services-list">
@@ -278,14 +280,14 @@
                 совершенно
                 бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
             </li>
-            <li class="guarantee-item">
+            <li class="guarantee-item services-item-disable">
               <h3 class="service-name">Гарантия</h3>
               <p class="service-text-description">Если купленный у нас товар поломается или заискрит, а также в случае
                 пожара, спровоцированного его
                 возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
               <p class="service-text-description">Дом уж восстановите как-нибудь сами.</p>
             </li>
-            <li class="credit-item">
+            <li class="credit-item services-item-disable">
               <h3 class="service-name">Кредит</h3>
               <p class="service-text-description">Залезть в долговую яму стало проще!</p>
               <p class="service-text-description">Кредитные консультанты придут вам на помощь.</p>
@@ -427,9 +429,22 @@
     <button class="close-modal-button close-modal-map" type="button" aria-label="Закрыть карту"></button>
   </div>
 
-  <script src="js/feedbackMin.js"></script>
-  <script src="js/mapMin.js"></script>
-  <script src="js/cartMin.js"></script>
+  <div class="modal modal-cart">
+    <div class="modal-form-massage">
+      <p>Товар добавлен в корзину!</p>
+    </div>
+    <div class="modal-cart-button">
+      <a href="blank.html" class="cart-button complete-button link-red">Оформить заказ</a>
+      <a href="blank.html" class="cart-button continue-button link-white">Продолжить покупки</a>
+    </div>
+    <button class="close-modal-button close-modal-cart" type="button" aria-label="Закрыть окно"></button>
+  </div>
+
+  <script src="js/gallery-min.js"></script>
+  <script src="js/services-min.js"></script>
+  <script src="js/feedback-min.js"></script>
+  <script src="js/map-min.js"></script>
+  <script src="js/cart-min.js"></script>
 </body>
 
 </html>

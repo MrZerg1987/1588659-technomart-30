@@ -1,13 +1,22 @@
-const cartLink = document.querySelector(".product-card-button-buy");
+const cartLinks = document.querySelectorAll(".product-card-button-buy");
 const cartPopup = document.querySelector(".modal-cart");
 const cartClose = cartPopup.querySelector(".close-modal-cart");
+const continueLinks = cartPopup.querySelector(".continue-button");
 
-cartLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartPopup.classList.add("modal-show");
+
+cartLinks.forEach((el) => {
+  el.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("modal-show");
+  })
 });
 
 cartClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cartPopup.classList.remove("modal-show");
+});
+
+continueLinks.addEventListener("click", function (evt) {
   evt.preventDefault();
   cartPopup.classList.remove("modal-show");
 });
