@@ -3,12 +3,11 @@ const cartPopup = document.querySelector(".modal-cart");
 const cartClose = cartPopup.querySelector(".close-modal-cart");
 const continueLinks = cartPopup.querySelector(".continue-button");
 
-
 cartLinks.forEach((el) => {
   el.addEventListener("click", function (evt) {
     evt.preventDefault();
     cartPopup.classList.add("modal-show");
-  })
+  });
 });
 
 cartClose.addEventListener("click", function (evt) {

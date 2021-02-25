@@ -6,12 +6,12 @@ const gallerySlideOne = document.querySelector(".slide-1");
 const gallerySlideTwo = document.querySelector(".slide-2");
 
 galleryButtonBack.addEventListener("click", function () {
-    gallerySlideOne.classList.remove("slide-off");
-    galleryButtonBack.classList.add("button-disable");
-    gallerySlideTwo.classList.add("slide-off");
-    galleryButtonNext.classList.remove("button-disable");
-    galleryPaginationOne.classList.add("gallery-pagination-active");
-    galleryPaginationTwo.classList.remove("gallery-pagination-active");
+  gallerySlideOne.classList.remove("slide-off");
+  galleryButtonBack.classList.add("button-disable");
+  gallerySlideTwo.classList.add("slide-off");
+  galleryButtonNext.classList.remove("button-disable");
+  galleryPaginationOne.classList.add("gallery-pagination-active");
+  galleryPaginationTwo.classList.remove("gallery-pagination-active");
 });
 
 galleryPaginationOne.addEventListener("click", function () {
@@ -24,12 +24,12 @@ galleryPaginationOne.addEventListener("click", function () {
 });
 
 galleryButtonNext.addEventListener("click", function () {
-    gallerySlideTwo.classList.remove("slide-off");
-    galleryButtonNext.classList.add("button-disable");
-    gallerySlideOne.classList.add("slide-off");
-    galleryButtonBack.classList.remove("button-disable");
-    galleryPaginationTwo.classList.add("gallery-pagination-active");
-    galleryPaginationOne.classList.remove("gallery-pagination-active");
+  gallerySlideTwo.classList.remove("slide-off");
+  galleryButtonNext.classList.add("button-disable");
+  gallerySlideOne.classList.add("slide-off");
+  galleryButtonBack.classList.remove("button-disable");
+  galleryPaginationTwo.classList.add("gallery-pagination-active");
+  galleryPaginationOne.classList.remove("gallery-pagination-active");
 });
 
 galleryPaginationTwo.addEventListener("click", function () {

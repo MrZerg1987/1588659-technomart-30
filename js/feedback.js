@@ -29,7 +29,7 @@ feedbackLink.addEventListener("click", function (evt) {
       userMail.focus();
     }
   } else {
-  userName.focus();
+    userName.focus();
   }
 });
 
@@ -46,8 +46,8 @@ feedbackForm.addEventListener("submit", function (evt) {
     feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
   } else {
     if (isStorageSupport) {
-    localStorage.setItem("name", userName.value);
-    localStorage.setItem("mail", userMail.value);
+      localStorage.setItem("name", userName.value);
+      localStorage.setItem("mail", userMail.value);
     }
   }
 });
